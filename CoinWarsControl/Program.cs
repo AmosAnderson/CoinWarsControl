@@ -13,7 +13,7 @@ namespace CoinWarsControl
     class Program
     {
         static Queue<VideoType> workQueue = new Queue<VideoType>();
-        
+
         static Process player = new Process();
 
         static bool playingPromo = false;
@@ -31,7 +31,7 @@ namespace CoinWarsControl
         static List<string> promoVideos = new List<string>();
 
         static Random rand = new Random();
-        
+
         static void Main(string[] args)
         {
             try
@@ -58,7 +58,7 @@ namespace CoinWarsControl
                 port.Open();
 
 
-               
+
 
                 while (true)
                 {
@@ -86,7 +86,7 @@ namespace CoinWarsControl
         static void SetupPlayer()
         {
             string playerName = "omxplayer";
-            
+
             player.StartInfo.UseShellExecute = false;
             player.StartInfo.RedirectStandardError = true;
             player.StartInfo.RedirectStandardInput = true;
